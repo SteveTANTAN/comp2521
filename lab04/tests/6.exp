@@ -1,0 +1,168 @@
+Runway Landing Scheduler v1.0
+Enter ? to see the list of commands.
+> + 3 18 1200
+Successfully added Mar 18 12:00 to the schedule!
+> + 3 18 1200
+Couldn't add Mar 18 12:00 to the schedule!
+> s 1
+Mar 18 12:00
+> + 3 18 1210
+Couldn't add Mar 18 12:10 to the schedule!
+> s 1
+Mar 18 12:00
+> + 3 18 1211
+Successfully added Mar 18 12:11 to the schedule!
+> s 2
+Mar 18 12:00 (height: 1)
+┕━╸R: Mar 18 12:11 (height: 0)
+> + 3 18 1120
+Successfully added Mar 18 11:20 to the schedule!
+> s 2
+Mar 18 12:00 (height: 1)
+┝━╸L: Mar 18 11:20 (height: 0)
+┕━╸R: Mar 18 12:11 (height: 0)
+> + 3 17 1120
+Successfully added Mar 17 11:20 to the schedule!
+> s 2
+Mar 18 12:00 (height: 2)
+┝━╸L: Mar 18 11:20 (height: 1)
+│     ┕━╸L: Mar 17 11:20 (height: 0)
+┕━╸R: Mar 18 12:11 (height: 0)
+> + 3 18 1200
+Couldn't add Mar 18 12:00 to the schedule!
+> + 3 18 1200
+Couldn't add Mar 18 12:00 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:20
+Mar 18 12:00
+Mar 18 12:11
+> n
+4 landing times have been added to the schedule.
+> + 3 18 1210
+Couldn't add Mar 18 12:10 to the schedule!
+> + 3 18 1211
+Couldn't add Mar 18 12:11 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:20
+Mar 18 12:00
+Mar 18 12:11
+> n
+4 landing times have been added to the schedule.
+> + 3 18 1221
+Couldn't add Mar 18 12:21 to the schedule!
+> + 3 18 1222
+Successfully added Mar 18 12:22 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:20
+Mar 18 12:00
+Mar 18 12:11
+Mar 18 12:22
+> n
+5 landing times have been added to the schedule.
+> + 3 18 1150
+Couldn't add Mar 18 11:50 to the schedule!
+> + 3 18 1149
+Successfully added Mar 18 11:49 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:20
+Mar 18 11:49
+Mar 18 12:00
+Mar 18 12:11
+Mar 18 12:22
+> n
+6 landing times have been added to the schedule.
+> + 3 18 1139
+Couldn't add Mar 18 11:39 to the schedule!
+> + 3 18 1138
+Successfully added Mar 18 11:38 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:20
+Mar 18 11:38
+Mar 18 11:49
+Mar 18 12:00
+Mar 18 12:11
+Mar 18 12:22
+> s 2
+Mar 18 12:00 (height: 3)
+┝━╸L: Mar 18 11:20 (height: 2)
+│     ┝━╸L: Mar 17 11:20 (height: 0)
+│     ┕━╸R: Mar 18 11:49 (height: 1)
+│           ┕━╸L: Mar 18 11:38 (height: 0)
+┕━╸R: Mar 18 12:11 (height: 1)
+      ┕━╸R: Mar 18 12:22 (height: 0)
+> n
+7 landing times have been added to the schedule.
+> + 3 18 1100
+Successfully added Mar 18 11:00 to the schedule!
+> + 3 18 1130
+Couldn't add Mar 18 11:30 to the schedule!
+> + 3 18 1120
+Couldn't add Mar 18 11:20 to the schedule!
+> + 3 18 1230
+Couldn't add Mar 18 12:30 to the schedule!
+> + 3 18 1240
+Successfully added Mar 18 12:40 to the schedule!
+> + 3 18 1255
+Successfully added Mar 18 12:55 to the schedule!
+> s 1
+Mar 17 11:20
+Mar 18 11:00
+Mar 18 11:20
+Mar 18 11:38
+Mar 18 11:49
+Mar 18 12:00
+Mar 18 12:11
+Mar 18 12:22
+Mar 18 12:40
+Mar 18 12:55
+> s 2
+Mar 18 12:00 (height: 3)
+┝━╸L: Mar 18 11:20 (height: 2)
+│     ┝━╸L: Mar 17 11:20 (height: 1)
+│     │     ┕━╸R: Mar 18 11:00 (height: 0)
+│     ┕━╸R: Mar 18 11:49 (height: 1)
+│           ┕━╸L: Mar 18 11:38 (height: 0)
+┕━╸R: Mar 18 12:22 (height: 2)
+      ┝━╸L: Mar 18 12:11 (height: 0)
+      ┕━╸R: Mar 18 12:40 (height: 1)
+            ┕━╸R: Mar 18 12:55 (height: 0)
+> n
+10 landing times have been added to the schedule.
+> + 12 30 1200
+Successfully added Dec 30 12:00 to the schedule!
+> + 1 1 1200
+Successfully added Jan 01 12:00 to the schedule!
+> s 1
+Jan 01 12:00
+Mar 17 11:20
+Mar 18 11:00
+Mar 18 11:20
+Mar 18 11:38
+Mar 18 11:49
+Mar 18 12:00
+Mar 18 12:11
+Mar 18 12:22
+Mar 18 12:40
+Mar 18 12:55
+Dec 30 12:00
+> s 2
+Mar 18 12:00 (height: 3)
+┝━╸L: Mar 18 11:20 (height: 2)
+│     ┝━╸L: Mar 17 11:20 (height: 1)
+│     │     ┝━╸L: Jan 01 12:00 (height: 0)
+│     │     ┕━╸R: Mar 18 11:00 (height: 0)
+│     ┕━╸R: Mar 18 11:49 (height: 1)
+│           ┕━╸L: Mar 18 11:38 (height: 0)
+┕━╸R: Mar 18 12:22 (height: 2)
+      ┝━╸L: Mar 18 12:11 (height: 0)
+      ┕━╸R: Mar 18 12:55 (height: 1)
+            ┝━╸L: Mar 18 12:40 (height: 0)
+            ┕━╸R: Dec 30 12:00 (height: 0)
+> n
+12 landing times have been added to the schedule.
+> q

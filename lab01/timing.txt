@@ -1,0 +1,38 @@
+Input	Initial	Has	Number	AvgTime	AvgTime
+Size	Order	Dups	of runs	forusel	forsort
+5000	random	no	10	0.081s  0.003s
+5000	sorted	no	10	0.011s	0.002s
+5000	reverse	no	10	0.010s	0.002s
+5000	random	yes	10	0.079s	0.004s
+5000	sorted	yes	10	0.009s	0.002s
+5000	reverse	yes	10	0.010s	0.002s
+10000	random	no	10	0.266s	0.009s
+10000	sorted	no	10	0.014s	0.002s
+10000	reverse	no	10	0.017s	0.003s
+10000	random	yes	10	0.280s	0.007s
+10000	sorted	yes	10	0.018s	0.003s
+10000	reverse	yes	10	0.020s	0.004s
+
+comment:
+
+1. Under the same condition, the average time for 
+using Sort Program is always smaller than the average 
+time for using IntList Program.
+
+2. As the number of data increases, no matter which 
+method, the program running time shows an increasing 
+trend. 
+Since the amount of computations increase.
+
+3. The running time of programs would not be affected 
+by data duplication.
+
+4. For both programs, the running time of the random 
+sequence is always larger than the running time of 
+the sorted sequence or reverse sequence. 
+Since, for the sorted and reverse sequence, the number 
+only needs to be inserted before the head of list or after 
+the end of list, so the time complexity of algorithm is O(1).
+But for the random sequence, the number needs to be inserted
+by using the loop, so its time complexity of algorithm is O(n/2).
+therefore, it needs more time. 
