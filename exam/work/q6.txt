@@ -1,0 +1,67 @@
+# COMP2521 20T2 Final Exam Q6
+# replace "-" by keys where appropriate
+
+(a)
+
+Initially
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   -    -    -    -    -    -    -    -    -    -     -     -     -
+
+After inserting 13
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    -    -    -    -    -    -    -    -    -     -     -
+
+
+   
+   
+After inserting 2
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    -    -    -    -    -    -     -     -
+
+
+
+After inserting 5
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    5    -    -    -    -    -     -     -
+
+
+
+After inserting 18
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    5    -    -    -    -    18    -     -
+
+
+
+After inserting 15
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    5    -    15   -    -    18    -     -
+
+
+After inserting 6
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    5    6    15   -    -    18    -     -
+
+
+After inserting 20
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    -    5    6    15   -    -    18    -     20
+
+
+After inserting 26
+
+  [0]  [1]  [2]  [3]  [4]  [5]  [6]  [7]  [8]  [9]  [10]  [11]  [12]
+   13   -    2    -    26   5    6    15   -    -    18    -     20
+
+
+(b) Is "smarter linear probing" really "smarter"?
+
+NO, It is not really smarter especially for the 26 case,
+as it has moved to many steps(6) to find its right location.

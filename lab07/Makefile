@@ -1,20 +1,14 @@
-# COMP2521 20T2 ... lab07
+CC=gcc
+CFLAGS=-Wall -Werror -g
+OBJS=tests.o Graph.o mattsGraph.o Queue.o
 
-CC	= gcc
-CFLAGS  = -Wall -Werror -g
+tests : $(OBJS)
+	$(CC) -o tests $(OBJS)
 
-.PHONY: all
-all: travel
+tests.o : tests.c Graph.h mattsGraph.h
+Graph.o : Graph.c Graph.h
+mattsGraph.o : mattsGraph.c mattsGraph.h
+Queue.o : Queue.c Queue.h Item.h
 
-travel:		travel.o Graph.o Queue.o
-travel.o:	travel.c Graph.h
-Graph.o:	Graph.c Graph.h Queue.h
-Queue.o:	Queue.c Queue.h Item.h
-
-.PHONY: clean
-clean:
-	-rm -f travel travel.o Graph.o Queue.o
-
-.PHONY: give
-give: Graph.c
-	give cs2521 lab07 $^
+clean :
+	rm -f tests $(OBJS) core *.dSYM

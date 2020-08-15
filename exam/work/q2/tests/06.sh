@@ -1,0 +1,1 @@
+./gist tests/g6

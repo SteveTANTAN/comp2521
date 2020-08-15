@@ -1,0 +1,25 @@
+# COMP2521 20T2 Final Exam Q8
+
+(a) how many words
+
+11
+
+
+(b) search for "battle"
+
+b->a->t
+
+
+(c) search for "deeds"
+
+d
+
+
+(d) new nodes after "bogus" added
+
+2
+
+
+(e) new nodes after "do" was added
+
+0

@@ -1,0 +1,17 @@
+# COMP2521 20T2 Final Exam Q3
+# Replace xxx with your answer
+
+(a) number of multiplications when N == 3
+
+27
+
+
+(b) number of multiplications when N == 20
+
+8000
+
+
+(c) algorithmic complexity of multiply()
+
+Complexity = O(N^3)
+

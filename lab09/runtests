@@ -1,0 +1,25 @@
+#!/bin/sh
+
+case $# in
+1) ;;
+*) echo "Usage: $0 sortA|sortB" ; exit 1 ;;
+esac
+
+cat /dev/null > log
+for size in 2000 5000 10000 20000 50000
+do
+	for order in random sorted reverse
+	do
+		echo === Testing for $order input, size $size === >> log
+		for i in 1 2 3 4 5
+		do
+			case $order in
+			random) flag="R" ;;
+			sorted) flag="A" ;;
+			reverse) flag="D" ;;
+			esac
+			{ ./gen $size $flag | time "./$1" > /dev/null ; } 2>> log
+		done
+		echo "" >> log
+	done
+done

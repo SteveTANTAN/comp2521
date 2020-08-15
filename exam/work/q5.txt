@@ -1,0 +1,42 @@
+# COMP2521 20T2 Final Exam Q5
+# Replace xxx with your answer
+
+(a) #cliques
+
+0
+
+
+(b) # connected components
+
+4
+
+
+(c) reachable from C
+
+None
+
+
+(d) reachable from J
+
+K
+
+
+(e) reachable from G
+
+H, F
+
+
+(f) #edges in longest path
+
+2
+
+
+(g) #cc's after adding C->H
+
+3
+
+
+(h) reachable from G after adding G->I
+
+H, F, I, J, K
+
